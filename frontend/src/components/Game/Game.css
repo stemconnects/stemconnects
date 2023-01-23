@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.game-body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: larger;
+  margin-top: 5vh;
+}
+
+.message span {
+  text-decoration: underline;
+  color: #4747f3;
+  cursor: pointer;
+}
+
+.game-body .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+  width: 700px;
+  max-width: 700px;
+}
+
+.container .message {
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #b4e4d9;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+.length-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.radio-buttons label {
+  user-select: none;
+  padding: 0px 4px 0px 4px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.radio-buttons .active {
+  background-color: #b4e4d9;
+  border: 2px solid black;
+}
+
+.radio-buttons .active:hover {
+  background-color: #7cd1bd;
+  border: 2px solid black;
+}
+
+.radio-buttons .inactive:hover {
+  background-color: lightgray;
+}
+
+.typing-area {
+  background-color: #e1ebee;
+  border-radius: 1rem;
+  border: 2px solid black;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.prompt {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.75rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.controls input {
+  flex: 4;
+  font-family: 'Roboto Mono', monospace;
+  font-size: larger;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  padding: 0 0.5rem;
+}
+
+.controls button {
+  flex: 1;
+  font-family: 'Roboto Mono', monospace;
+  font-size: larger;
+  background-color: #b4e4d9;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+}
+
+.controls button:hover {
+  background-color: #7cd1bd;
+}
